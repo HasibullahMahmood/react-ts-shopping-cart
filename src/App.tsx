@@ -12,7 +12,7 @@ import Badge from '@material-ui/core/Badge';
 import { Wrapper } from './App.styles';
 
 // types
-import CartItemType from 'models/CartItemType';
+import CartItemType from 'models/ProductItemType';
 
 const getProducts = async (): Promise<CartItemType[]> =>
 	await (await fetch('https://fakestoreapi.com/products')).json();
